@@ -24,16 +24,16 @@
   </rowConstraints>
    <children>
       <Label text="Conta" />
+      <Label text="Nº Pessoas" GridPane.rowIndex="1" />
       <Label fx:id="gorjetaPorcentagemLabel" text="15%" GridPane.rowIndex="2" />
       <Label text="Gorjeta" GridPane.rowIndex="3" />
       <Label text="Total" GridPane.rowIndex="4" />
       <TextField fx:id="contaTextField" GridPane.columnIndex="1" />
+      <TextField fx:id="nPessoasTextField" GridPane.columnIndex="1" GridPane.rowIndex="1" />
       <TextField fx:id="gorjetaTextField" editable="false" focusTraversable="false" GridPane.columnIndex="1" GridPane.rowIndex="3" />
       <TextField fx:id="totalTextField" editable="false" focusTraversable="false" GridPane.columnIndex="1" GridPane.rowIndex="4" />
       <Slider fx:id="gorjetaPorcentagemSlider" blockIncrement="5.0" max="30.0" value="15.0" GridPane.columnIndex="1" GridPane.rowIndex="2" />
       <Button maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#calcularBotaoPressionado" text="Calcular" GridPane.columnIndex="1" GridPane.rowIndex="5" />
-      <Label text="Nº Pessoas" GridPane.rowIndex="1" />
-      <TextField fx:id="contaTextField1" GridPane.columnIndex="1" GridPane.rowIndex="1" />
    </children>
    <padding>
       <Insets bottom="14.0" left="14.0" right="14.0" top="14.0" />

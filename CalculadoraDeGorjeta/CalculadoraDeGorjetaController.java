@@ -16,6 +16,9 @@ public class CalculadoraDeGorjetaController {
 
   @FXML
   private TextField contaTextField;
+  
+  @FXML
+  private TextField nPessoasTextField;
 
   @FXML
   private TextField gorjetaTextField;
@@ -35,6 +38,7 @@ public class CalculadoraDeGorjetaController {
   private void calcularBotaoPressionado(ActionEvent evento) {
     try {
       BigDecimal conta = new BigDecimal(contaTextField.getText());
+      BigDecimal nPessoas = new BigDecimal(nPessoasTextField.getText());
       BigDecimal gorjeta = conta.multiply(porcentagemGorjeta);
       BigDecimal total = conta.add(gorjeta);
 
