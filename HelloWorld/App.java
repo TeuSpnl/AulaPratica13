@@ -11,7 +11,7 @@ public class App extends Application{
 
     @Override
     public void start(Stage palco) throws Exception {
-        Parent raiz = FXMLLoader.load(getClass().getResource("Images_Adapt.fxml"));
+        Parent raiz = FXMLLoader.load(getClass().getResource("HelloWorld.fxml"));
         Scene tela = new Scene(raiz);
         palco.setTitle("Faça sua viagem dos sonhos.");
         palco.setScene(tela);
